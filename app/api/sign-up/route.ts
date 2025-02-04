@@ -55,7 +55,7 @@ export async function POST(req: Request, res: Response) {
             return Response.json({ success: false, message: emailResponse.message },{ status: 500 });
         }
 
-        return Response.json({ success: true, message: "User Registered successfully. Please verify email" },{ status: 201 });
+        return Response.json({ success: true, message: "User Registered successfully. Please verify email" },{ status: 201 });  
     } catch (error) {
         console.error(error);
         return Response.json({ success: false, message: "An error occurred" },{ status: 500 });
